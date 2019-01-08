@@ -23,8 +23,9 @@
 
 						console.log("error caught by jserr cloud", report);
           }
-			}
-  }
+				}
+  		}
+		}
 
 	jsErrCloud.getStacktrace = function(error, errorFramesToSkip = 0, generatedFramesToSkip = 0) {
 		return ErrorStackParser.parse(error).slice(errorFramesToSkip);
